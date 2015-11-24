@@ -1,0 +1,77 @@
+/*---GLOBAL---STYLES---*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #456990;
+  color: white;
+  font-family: 'Roboto';
+  margin: 0 auto;
+  width: 80%;
+}
+
+h1 {}
+
+
+/*---HEADER---STYLES---*/
+
+header {
+  background-color: #456990;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0;
+}
+
+button.nav-button {
+  background-color: #F45B69;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 7px;
+  border: 1px solid white;
+}
+
+
+/*---HOME---STYLES---*/
+
+div.home {
+  font-size: 1.25em;
+}
+
+div.home h1 {
+  margin-top: 0;
+}
+
+
+/*---HOBBIES---STYLES---*/
+
+div.hobbies {
+  font-size: 1.25em;
+}
+
+div.hobbies h1 {
+  margin-top: 0;
+}
+
+
+/*---SKILLS---STYLES---*/
+
+div.skills {
+  font-size: 1.25em;
+}
+
+div.skills h1 {
+  margin-top: 0;
+}

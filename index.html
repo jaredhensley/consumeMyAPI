@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Consume MyAPI</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300italic,300,500,500italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body ng-app="myApp">
+
+  <header>
+    <button class="nav-button" ui-sref="/">go to home</button>
+    <button class="nav-button" ui-sref="me">go to me</button>
+    <button class="nav-button" ui-sref="skills">go to skills</button>
+    <h1>myAPI</h1>
+  </header>
+
+  <div>
+    <br>
+    <ui-view></ui-view>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+  <script src="app/app.js"></script>
+  <script src="app/controllers/mainCtrl.js"></script>
+  <script src="app/services/mainService.js"></script>
+  <script></script>
+</body>
+
+</html>
