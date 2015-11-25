@@ -15,15 +15,30 @@ angular.module('myApp').controller('mainCtrl', function ($scope, mainService) {
   $scope.getHobbies = function () {
     mainService.getHobbies().then(function (response) {
       $scope.hobbies = response.data.hobbies;
-
-    })
+    });
   }
 
   $scope.getSkills = function () {
     mainService.getSkills().then(function (response) {
       $scope.skills = response.data;
       console.log(response.data);
-    })
+    });
+  }
+
+  $scope.getOccupations = function () {
+    mainService.getOccupations().then(function (response) {
+      $scope.occupations = response.data.occupations;
+      console.log(response.data.occupations);
+    });
+
+    $scope.updateHobbies = function (hobby) {
+      mainService.updateHobbies(hobby).then(function (response) {
+        console.log(response);
+        $scope.getHobbies();
+
+      })
+
+    }
 
   }
 
@@ -32,6 +47,7 @@ angular.module('myApp').controller('mainCtrl', function ($scope, mainService) {
   $scope.getLocation();
   $scope.getHobbies();
   $scope.getSkills();
+  $scope.getOccupations();
 
 
 });

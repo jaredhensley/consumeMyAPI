@@ -38,6 +38,35 @@ angular.module('myApp').service('mainService', function ($http) {
     })
   }
 
+  this.getOccupations = function () {
+    return $http({
+      method: 'GET',
+      url: 'http://localhost:9001/occupations'
+    }).then(function (res) {
+
+      console.log(res);
+      return res;
+    })
+
+  }
+
+  /*--POST REQUESTS---*/
+
+  this.updateHobbies = function (hobby) {
+    return $http({
+      method: 'POST',
+      url: 'http://localhost:9001/hobbies',
+      data: {
+        name: hobby.name,
+        type: hobby.type
+      }
+    }).then(function (res) {
+      console.log(res);
+      return res;
+    })
+
+  }
+
 
 
 });

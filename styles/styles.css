@@ -32,6 +32,7 @@ header {
 
 header h1 {
   margin-bottom: 0;
+  font-size: 2em;
 }
 
 button.nav-button {
@@ -61,7 +62,39 @@ div.hobbies {
   font-size: 1.25em;
 }
 
+div.test {
+  float: left;
+  width: 50%;
+}
+
+.hobby-form {
+  width: 50%;
+  float: left;
+}
+
+.hobby-form input {
+  display: block;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px 5px 5px 0;
+  border-radius: 5px;
+  color: black;
+}
+
+.hobby-form button {
+  background-color: #F45B69;
+  font-size: 16px;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
 div.hobbies h1 {
+  margin-top: 0;
+}
+
+div.occupations h1 {
   margin-top: 0;
 }
 
