@@ -60,28 +60,39 @@ div.home h1 {
 
 div.hobbies {
   font-size: 1.25em;
+  border: 1px solid #F45B69;
 }
 
-div.test {
+div.parent {
   float: left;
   width: 50%;
 }
 
-.hobby-form {
-  width: 50%;
-  float: left;
+div.section-parent {
+  border: 1px solid #F45B69;
 }
 
-.hobby-form input {
+form.general-form {
+  width: 50%;
+  float: left;
+  border: 1px solid #F45B69;
+}
+
+form.general-form input {
   display: block;
-  border: 1px solid black;
+  border: 1px solid #F45B69;
   padding: 5px;
   margin: 5px 5px 5px 0;
   border-radius: 5px;
   color: black;
+  width: 65%;
 }
 
-.hobby-form button {
+div.first-form {
+  margin-bottom: 20px;
+}
+
+form.general-form button {
   background-color: #F45B69;
   font-size: 16px;
   padding: 10px;
@@ -103,6 +114,7 @@ div.occupations h1 {
 
 div.skills {
   font-size: 1.25em;
+  border: 1px solid white;
 }
 
 div.skills h1 {

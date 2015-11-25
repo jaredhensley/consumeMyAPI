@@ -1,24 +1,34 @@
 <div class="hobbies">
   <h1>Hobbies</h1>
-  <div class="test">
-    <div class="hobby" ng-repeat="hobby in hobbies">
-      name: {{hobby.name}}
-      <br> type: {{hobby.type}}</br>
-      <br>
-    </div>
-    <div class="occupations">
-      <h1>Past Occupations</h1>
-      <div class="occupation" ng-repeat="occupation in occupations">
-        <li>{{occupation}}</li>
+  <div class="parent">
+    <div class="section-parent">
+      <div class="hobby" ng-repeat="hobby in hobbies">
+        name: {{hobby.name}}
+        <br> type: {{hobby.type}}</br>
         <br>
+      </div>
+    </div>
+    <div class="section-parent">
+      <div class="occupations">
+        <h1>Past Occupations</h1>
+        <div class="occupation" ng-repeat="occupation in occupations">
+          <li>{{occupation}}</li>
+          <br>
+        </div>
       </div>
     </div>
   </div>
 
+  <div class="forms">
+    <form class="general-form first-form" ng-submit="updateHobbies(hobby)">
+      <input type="text" ng-model="hobby.name" placeholder="enter name of hobby">
+      <input type="text" ng-model="hobby.type" placeholder="enter type of hobby">
+      <button type="submit">Add Hobby</button>
+    </form>
 
-  <form class="hobby-form" ng-submit="updateHobbies(hobby)">
-    <input type="text" ng-model="hobby.name" placeholder="enter name of hobby">
-    <input type="text" ng-model="hobby.type" placeholder="enter type of hobby">
-    <button type="submit" ng-click="updateHobbies(hobby)">Add Hobby</button>
-  </form>
+    <form class="general-form second-form" ng-submit="updateOccupations(occupation)">
+      <input type="text" ng-model="occupation" placeholder="enter name of occupation">
+      <button type="submit">Add Hobby</button>
+    </form>
+  </div>
 </div>

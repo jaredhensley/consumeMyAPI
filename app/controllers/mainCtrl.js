@@ -35,9 +35,13 @@ angular.module('myApp').controller('mainCtrl', function ($scope, mainService) {
       mainService.updateHobbies(hobby).then(function (response) {
         console.log(response);
         $scope.getHobbies();
-
       })
+    }
 
+    $scope.updateOccupations = function (occupation) {
+      mainService.updateOccupations(occupation).then(function (response) {
+        $scope.getOccupations();
+      })
     }
 
   }

@@ -67,6 +67,19 @@ angular.module('myApp').service('mainService', function ($http) {
 
   }
 
+  this.updateOccupations = function (occupation) {
+    return $http({
+      method: 'POST',
+      url: 'http://localhost:9001/occupations',
+      data: {
+        job: occupation
+      }
+    }).then(function (res) {
+      return res;
+    })
+
+  }
+
 
 
 });
